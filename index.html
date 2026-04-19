@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Product Filter</h2>
+
+<form method="POST">
+    <input name="price" placeholder="Max price">
+    <button>Filter</button>
+</form>
+
+{% for p in products %}
+    <p>{{ p.name }} - {{ p.price }}</p>
+{% endfor %}
+
+</body>
+</html>
